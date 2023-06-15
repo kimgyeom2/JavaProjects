@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Ex07 {
+
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		System.out.print("패스워드를 입력하세요: ");
+		String pass=scan.next();
+		while(true) {
+			if(pass.length()<8)System.out.println();
+		}
+				
+
+	}
+
+}

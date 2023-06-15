@@ -1,0 +1,45 @@
+import java.util.Scanner;
+public class Ex05 {
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		
+		String s1,s2,s3;
+		while(true) {
+		System.out.print("첫번째 자리입력(3자리) :");
+		s1=scan.next();
+		for(int i=0;i<s1.length();i++) {
+			char ch=s1.charAt(i);
+		if(s1.length()!=3 ||  ch<'0' || ch>'9' ) {
+			System.out.println("잘못입력하셨습니다.3~4자리의 숫자를 다시입력하세요");}
+		else break;}
+		
+		
+		while(true) {
+			System.out.print("두번째 자리입력(3~4자리) :");
+			s2=scan.next();
+			for(int i=0;i<s1.length();i++) {
+				char ch=s1.charAt(i);
+			if(s1.length()!=3 || s1.length()!=3 || ch<'0' || ch>'9' ) {
+				System.out.println("잘못입력하셨습니다.3~4자리의 숫자를 다시입력하세요");}
+			else break;}
+		
+		
+		while(true) {
+			System.out.print("세번째 자리입력(4자리) :");
+			s3=scan.next();
+			for(int i=0;i<s1.length();i++) {
+				char ch=s1.charAt(i);
+			if(s1.length()!=4 ||  ch<'0' || ch>'9' ) {
+				System.out.println("잘못입력하셨습니다.3~4자리의 숫자를 다시입력하세요");}
+			else break;}
+		System.out.println(s1+"-"+s2+"-"+s3);
+		
+		
+		
+			
+		
+		}
+		}
+		}
+	}
+}

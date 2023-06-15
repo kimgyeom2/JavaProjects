@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Ex06 {
+
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		String email;
+		while(true) {
+			System.out.print("메일주소 입력(@)포함 : ");
+			email=scan.next();
+			boolean b=email.contains("@");
+			if(b==true) break;
+			else System.out.println("잘못 입력하셨습니다. @포함 메일서버주소까지 모두 입력하셔야 합니다");
+		}
+		String arr[]=email.split("@");
+		System.out.println("입력된 메일주소명: "+arr[0]);
+		System.out.println("메일 서버이름:"+arr[1]);
+	}
+
+}
